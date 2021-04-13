@@ -2,6 +2,7 @@ body {
   font: 20px Montserrat, sans-serif;
   line-height: 1.8;
   color: #f5f6f7;
+
 }
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
@@ -53,6 +54,19 @@ p {font-size: 16px;}
 #tests-3:hover{
   transform: rotateZ(-50deg);
 }
+@keyframes example {
+  0%   {transform: rotateZ(0);}
+  25%  {transform: rotateZ(-1deg);}
+  50%  {transform: rotateZ(0);}
+  75%  {transform: rotateZ(1deg);}
+  100% {transform: rotateZ(0);}
+}
+
+/* The element to apply the animation to */
 body{
-     transform: rotateZ(2deg);
+  animation-name: example;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+animation-timing-function: linear;
+overflow-x: hidden;
 }
