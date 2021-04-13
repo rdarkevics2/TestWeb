@@ -37,3 +37,22 @@ p {font-size: 16px;}
 .navbar-nav  li a:hover {
   color: #1abc9c !important;
 }
+#tests-1:hover{
+  color: red;
+}
+#tests-2{
+  margin-left: 0px !important;
+}
+#tests-2:first-letter{
+
+    /*float:left;
+    */
+    color:#f00;
+    font-size:300%;
+}
+#tests-3:hover{
+  transform: rotateZ(-50deg);
+}
+body{
+     transform: rotateZ(2deg);
+}
