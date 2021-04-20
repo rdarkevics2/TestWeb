@@ -41,6 +41,9 @@ p {font-size: 16px;}
 #tests-1:hover{
   color: red;
 }
+#tests-1{
+  transition: color 1s;
+}
 #tests-2{
   margin-left: 0px !important;
 }
@@ -52,7 +55,11 @@ p {font-size: 16px;}
     font-size:300%;
 }
 #tests-3:hover{
-  transform: rotateZ(-50deg);
+  transform: rotate(-50deg);
+}
+#tests-3 {
+  transition: transform 1s;
+
 }
 @keyframes example {
   0%   {transform: rotateZ(0);}
@@ -61,7 +68,13 @@ p {font-size: 16px;}
   75%  {transform: rotateZ(1deg);}
   100% {transform: rotateZ(0);}
 }
-
+@keyframes example2 {
+  0%   {transform: rotateZ(0);}
+  25%  {transform: rotateZ(10deg);}
+  50%  {transform: rotateZ(20deg);}
+  75%  {transform: rotateZ(30deg);}
+  100% {transform: rotateZ(40deg);}
+}
 /* The element to apply the animation to */
 body{
   animation-name: example;
@@ -69,4 +82,10 @@ body{
   animation-iteration-count: infinite;
 animation-timing-function: linear;
 overflow-x: hidden;
+}
+img:hover{
+  opacity: 0;
+}
+img{
+  transition: opacity 2s;
 }
