@@ -35,8 +35,11 @@ p {font-size: 16px;}
   font-size: 12px;
   letter-spacing: 5px;
 }
-.navbar-nav  li a:hover {
+.navbar-nav  li:hover {
   color: #1abc9c !important;
+}
+.navig{
+  color: black !important;
 }
 #tests-1:hover{
   color: red;
