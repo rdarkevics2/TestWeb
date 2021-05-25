@@ -79,7 +79,7 @@ p {font-size: 16px;}
   100% {transform: rotateZ(40deg);}
 }
 /* The element to apply the animation to */
-body{
+.swivel {
   animation-name: example;
   animation-duration: 30s;
   animation-iteration-count: infinite;
@@ -96,7 +96,8 @@ img{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 20;
 }
-.sticky + .content {
-  padding-top: 120px;
+#navbar + div {
+  padding-top: 60px;
 }
