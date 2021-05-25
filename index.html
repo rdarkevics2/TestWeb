@@ -29,6 +29,7 @@
         <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Kas es esmu?</a></li>
         <li><a href="#poga1">CSS Triki</a></li>
         <li><a href="#poga2">Vēl triki</a></li>
+        <li><a href="#poga3">Dinamisks HTML</a></li>
       </ul>
     </div>
   </div>
@@ -79,7 +80,13 @@
     </div>
   </div>
 </div>
-
+<div id="poga3" class="container-fluid bg-1 text-center">
+  <h3 class="margin">Dinamisks HTML</h3>
+  <form>
+    <p> Izvēlies laukuma izmēru <input name="cik" type="number" min="2" max="6" step="2" value="2"></p>
+    <input type="button" onclick="laukums(cik.value);" value="Ģenerēt laukumu">
+  </form>
+</div>
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
   <p>Paldies par uzmanību</p>
@@ -97,6 +104,11 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+function laukums(n){
+  let p=document.createElement("P");
+  p.innerHTML="Te būs laukums ar "+n+"x"+n+" lauciņiem";
+  document.getElementById("poga3").appendChild(p);
 }
 </script>
 </body>
